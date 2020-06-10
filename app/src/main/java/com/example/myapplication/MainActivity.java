@@ -105,7 +105,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
-                        showResult();
+            Button button = findViewById(R.id.button);
+            button.setVisibility(View.INVISIBLE);
+            showResult();
         }
     }
 }

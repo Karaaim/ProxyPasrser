@@ -67,7 +67,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             tableLayout.addView(tableRow, i);
         }
-
     }
 
 
@@ -106,9 +105,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
-            Button button = findViewById(R.id.button);
-            button.setVisibility(View.INVISIBLE);
-            showResult();
+                        showResult();
         }
     }
 }
